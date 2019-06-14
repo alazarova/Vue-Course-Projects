@@ -1,0 +1,21 @@
+<template>
+<div>
+     <app-server-status v-for="server in 5" :key="server.id"></app-server-status>
+     <hr>
+          <hr>
+
+     <hr>
+
+</div>
+</template>
+
+<script>
+import ServerStatus from './ServerStatus.vue'
+export default {
+    components:{
+        'app-server-status': ServerStatus
+    }
+ 
+}
+</script>
+
